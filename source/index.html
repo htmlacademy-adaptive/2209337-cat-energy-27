@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
   <link  rel="icon" type="image/png" size="32x32" href="#">
@@ -9,36 +10,30 @@
 </head>
 <body class="page__body">
   <header class="header">
-    <a class="logo__mobile" href="#">Логотип компании</a>
+    <a class="logo" href="#"><span class="visually-hidden">Логотип компании</span></a>
     <nav class="main__nav">
-      <button class="main__nav__button-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main__nav__list">
-        <li class="main__nav__item">
-          <a href="#">главная</a>
-        </li>
-        <li class="main__nav__item">
-          <a href="#">каталог продукции</a>
-        </li>
-        <li class="main__nav__item">
-          <a href="#">подбор программы</a>
-        </li>
-      </ul>
+    <button class="main__nav__button-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main__nav__list">
+        <a class="main__nav__link" href="#">главная</a>
+        <a class="main__nav__link" href="#">каталог продукции</a>
+        <a class="main__nav__link" href="#">подбор программы</a>
+      </div>
     </nav>
   </header>
   <main class="main">
     <section class="promo">
       <h1 class="promo__title">Функциональное питание для котов</h1>
-      <p class="prmo__text">Занялся собой? Займись котом!</p>
+      <p class="promo__text">Занялся собой? Займись котом!</p>
       <a class="button">подобрать программу</a>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <div class="advantadges-wrapper">
-        <h3 class="advantages__title ">похудение</h3>
+      <div class="advantages__wrapper">
+        <h3 class="advantages__title">похудение</h3>
         <p class="advantages__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="advantages__link" href="#">каталог slim</a>
       </div>
-      <div class="advantadges__wrapper">
+      <div class="advantages__wrapper">
         <h3 class="advantages__title">набор массы</h3>
         <p class="advantages__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="advantages__link" href="#">каталог pro</a>
@@ -72,21 +67,17 @@
         <h2 class="map__title">приглашаем к сотрудничеству дилеров!</h2>
         <address class="map__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
       </div>
-      <img src="#" width="" height="" alt="Местоположение нашего магазина.">
+      <img src="#" width="320" height="362" alt="Местоположение нашего магазина.">
     </section>
   </main>
   <footer class="footer">
-    <div class="foter__wrapper">
-      <a class="logo__mobile">Логотип компании</a>
-      <div class="social">
-        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
-      </div>
-      <div class="footer__copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <a class="logo__mobile">Логотип компании</a>
+    <div class="social">
+      <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+      <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+      <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
     </div>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </footer>
 </body>
 </html>
