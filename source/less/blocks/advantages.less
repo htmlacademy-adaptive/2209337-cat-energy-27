@@ -1,0 +1,107 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 30px 30px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    column-gap: 80px;
+    justify-content: center;
+  }
+}
+
+.advantages__wrapper {
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 570px;
+  }
+}
+
+.advantages__title {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 30px 80px 30px 90px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 75px 0 25px 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 80px 0 70px 215px;
+  }
+}
+
+.advantages__text {
+  margin: 0;
+  padding: 0 30px 22px 20px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    border-bottom: none;
+    min-width: 340px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 23px;
+    padding-left: 52px;
+    min-width: 450px;
+  }
+}
+
+.advantages__link {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 0 18px 20px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 52px;
+    padding-left: 50px;
+  }
+}
+
+.advantages__link::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/advantages-arrow.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 12px;
+  top: 17px;
+  left: 115px;
+
+  @media (min-width: @tablet-width) {
+    top: 25px;
+    left: 175px;
+  }
+}

@@ -1,3 +1,13 @@
+.promo {
+  @media (min-width: @tablet-width) {
+    margin-left: 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 190px;
+  }
+}
+
 .promo__title {
   font-family: "Oswald", "Helvetica", sans-serif;
   font-weight: 400;
@@ -5,12 +15,15 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  margin: 0;
+  padding: 25px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: #000000;
     text-align: start;
+    padding: 60px 0 40px;
   }
 }
 
@@ -22,11 +35,14 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
     text-align: start;
+    padding-bottom: 50px;
   }
 }

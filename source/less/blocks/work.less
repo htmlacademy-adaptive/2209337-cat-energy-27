@@ -1,22 +1,43 @@
+.work {
+  margin: 10px 20px 50px;
+
+  @media (min-width: @tablet-width) {
+    margin: 15px 30px 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 70px 110px;
+  }
+}
+
 .work__title {
   font-family: "Oswald", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  padding-bottom: 40px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 70px;
   }
 }
 
 .work__list {
   list-style-type: none;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
+    display: grid;
     list-style-type: auto;
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.work__item:not(:last-child) {
+  padding-bottom: 20px;
 }
