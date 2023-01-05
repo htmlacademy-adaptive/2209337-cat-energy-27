@@ -22,7 +22,7 @@
   </header>
   <main class="form">
     <form class="form__conteiner">
-      <h1 class="form__title">Подбор программы</h1>
+      <h1 class="form__title-main">Подбор программы</h1>
       <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       <div class="form__form-cat">
         <label class="form__name-label" for="cat-name">имя:*
@@ -53,15 +53,25 @@
             <span class="form__name">не знаю (Нужен ваш совет)</span>
           </label>
       </fieldset>
-        <h2 class="form__title-contact">Контактные данные (владельца кота)</h2>
-          <div class="form__form-human">
-            <label class="form__name-label icon-email" for="email">E-mail:*</label>
-            <input class="form__field" id="email" placeholder="kuklachev@gmail.com" type="email">
-            <label class="form__name-label icon-phone" for="phone">Телефон:*</label>
-            <input class="form__field" id="phone" placeholder="8 (960) 900-60-90" type="number">
+          <div class="form__line-conteiner">
+            <span class="form__title-wrapper"><h2 class="form__line-title">Контактные данные (владельца кота)</h2></span>
           </div>
-      <fieldset>
-        <legend class="">Дополнительно</legend>
+        <div class="form__form-human">
+          <label class="form__name-label icon-email" for="email">E-mail:*
+          <input class="form__field" id="email" placeholder="kuklachev@gmail.com" type="email">
+          </label>
+          <label class="form__name-label icon-phone" for="phone">Телефон:*
+          <input class="form__field" id="phone" placeholder="8 (960) 900-60-90" type="number">
+          </label>
+        </div>
+        <div class="form__line-conteiner">
+          <span class="form__title-wrapper"><h2 class="form__line-title">Комментарий</h2></span>
+        </div>
+        <div class="form__line-conteiner">
+          <span class="form__title-wrapper"><h2 class="form__line-title">Дополнительно</h2></span>
+        </div>
+      <fieldset class="form__more">
+        <legend class="visually-hidden">Дополнительно</legend>
           <label class="form__item">
             <input class="visually-hidden box-check" type="checkbox" name="sweetener" checked>
             <span class="form__box"></span>
