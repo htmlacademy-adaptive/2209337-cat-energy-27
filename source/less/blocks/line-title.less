@@ -1,23 +1,31 @@
-.form__line-conteiner {
+.line__conteiner {
   position: relative;
 }
 
-.form__line-conteiner::before {
+.line__conteiner::before {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 100vw;
   height: 2px;
   background-color: @base-color;
   top: 55%;
   z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    margin-left: calc((100vw - 768px) / 2);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: calc((100vw - 1440px) / 2);
+  }
 }
 
-.form__title-wrapper {
+.line__title-wrapper {
   max-width: 1220px;
   margin: 0 auto;
 }
 
-.form__line-title {
+.line__title {
   font-size: 24px;
   line-height: 26px;
   color: #000000;

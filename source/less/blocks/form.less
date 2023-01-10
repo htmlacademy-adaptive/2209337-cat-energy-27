@@ -102,6 +102,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    column-gap: 80px;
   }
 }
 
@@ -151,15 +152,14 @@
   content: "";
   width: 18px;
   height: 14px;
-  background-image: url("../img/form-tick-mobile.svg");
+  background-image: url("../img/form-tick.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   top: 7px;
   left: 5px;
 
   @media (min-width: @tablet-width) {
     content: "";
-    background-image: url("../img/form-tick-tablet.svg");
-    background-repeat: no-repeat;
     width: 24px;
     height: 19px;
     top: 10px;
@@ -182,5 +182,22 @@
     height: 18px;
     top: 11px;
     left: 11px;
+  }
+}
+
+.form__comment {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  border: 1px solid #e7e7e7;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px 0 0 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
   }
 }
