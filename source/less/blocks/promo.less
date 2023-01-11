@@ -27,6 +27,10 @@
     text-align: start;
     padding: 60px 0 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 110px;
+  }
 }
 
 .promo__text {
@@ -59,20 +63,23 @@
   @media (min-width: @tablet-width) {
     width: 709px;
     height: auto;
+    margin-top: -30px;
   }
 
   @media (min-width: @desktop-width) {
     width: 552px;
     height: auto;
+    margin-top: -295px;
   }
 }
 
-.promo-img {
+.promo-img::before {
+  position: absolute;
+  content: "";
   background-image: linear-gradient(rgba(105, 183, 56, 85%), rgba(105, 183, 56, 85%)), url("../img/promo-background-img.jpg");
   background-repeat: no-repeat;
-  content: "";
   width: 100%;
-  height: auto;
+  min-height: 302px;
   background-size: cover;
   z-index: -1;
   top: 0;
@@ -87,10 +94,10 @@
     background-repeat: no-repeat;
     content: "";
     width: 50%;
-    height: auto;
+    min-height: 694px;
     background-size: cover;
     z-index: -1;
-    top: 0;
+    top: -85px;
     left: 50%;
   }
 }
