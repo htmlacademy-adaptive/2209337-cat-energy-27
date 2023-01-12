@@ -5,8 +5,8 @@
 
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
-    margin: 45px 30px 100px;
-    padding: 0;
+    padding: 45px 30px 100px;
+    border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: @desktop-width) {
@@ -52,6 +52,10 @@
   justify-content: center;
   column-gap: 32px;
   margin: 0 0 20px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+  }
 }
 
 .example__stats-item {
