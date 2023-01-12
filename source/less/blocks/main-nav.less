@@ -91,10 +91,16 @@
 
   .nav--opened .nav__list {
     position: absolute;
+    background-color: #ffffff;
     top: 0;
     right: 0;
     left: 0;
     z-index: 2;
+  }
+
+  .nav--opened .nav__link {
+    text-align: center;
+    width: 100vw;
   }
 }
 
@@ -113,8 +119,10 @@
     margin-top: 20px;
   }
 
-  @media (min-width: @desktop-width) {
-    color: #ffffff;
+  &--index {
+    @media (min-width: @desktop-width) {
+      color: #ffffff;
+    }
   }
 }
 
