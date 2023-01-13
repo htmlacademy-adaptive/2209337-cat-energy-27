@@ -8,9 +8,11 @@
   padding: 7px 70px;
   background-color: @base-color;
   color: #ffffff;
-  align-items: center;
   cursor: pointer;
   border: none;
+  display: flex;
+  margin: 0 20px 0;
+  justify-content: center;
 
   &--more {
     background-color: #f2f2f2;
@@ -20,6 +22,24 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding: 1em 2em;
+    padding: 14px 26px;
+    margin: 0;
+    display: inline;
   }
+}
+
+.button--form {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 13px 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 13px 188px;
+  }
+}
+
+.button--catalog {
+  
 }
