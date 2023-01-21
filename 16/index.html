@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link  rel="icon" type="image/png" size="32x32" href="#">
+  <link href="css/style.css" rel="stylesheet">
+  <base href="https://htmlacademy-adaptive.github.io/2209337-cat-energy-27/16/">
+</head>
+<body class="page">
+  <header class="header">
+    <nav class="nav nav--closed nav--nojs">
+    <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <a class="logo" href="index.html"><span class="visually-hidden">Логотип компании</span></a>
+      <div class="nav__list nav__list--index">
+        <a class="nav__link nav__link--active" href="#">главная</a>
+        <a class="nav__link" href="catalog.html">каталог продукции</a>
+        <a class="nav__link" href="form.html">подбор программы</a>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="promo">
+      <header class="promo-img">
+        <h1 class="promo__title">Функциональное<br> питание для котов</h1>
+        <p class="promo__text">Занялся собой? Займись котом!</p>
+      </header>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/promo-product-desktop.png 1x, img/promo-product-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/promo-product-tablet.png 1x, img/promo-product-tablet@2x.png 2x">
+        <img class="promo__image-product" src="img/promo-product-mobile.png" srcset="img/promo-product-mobile@2x.png" width="280" height="270" alt="Упаковка корма для кошек">
+      </picture>
+      <a class="button" href="form.html">подобрать программу</a>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <div class="advantages__wrapper advantages__wrapper--slim">
+        <h3 class="advantages__title">похудение</h3>
+        <p class="advantages__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a class="advantages__link" href="catalog.html">каталог slim</a>
+      </div>
+      <div class="advantages__wrapper advantages__wrapper--pro">
+        <h3 class="advantages__title">набор массы</h3>
+        <p class="advantages__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <a class="advantages__link" href="catalog.html">каталог pro</a>
+      </div>
+    </section>
+    <section class="work">
+      <h2 class="work__title">Как это работает</h2>
+      <ol class="work__list">
+        <li class="work__item work__item--one">Функциональное питание содержит только полезные питательные вещества.</li>
+        <li class="work__item work__item--two">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+        <li class="work__item work__item--three">Замените один-два приема обычной еды на наше функциональное питание.</li>
+        <li class="work__item work__item--four">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+      </ol>
+    </section>
+    <section class="example">
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+      <dl class="example__stats-list">
+        <div class="example__stats-item">
+          <dt class="example__stats-number">5 КГ</dt>
+          <dd class="example__stats-description">снижение веса</dd>
+        </div>
+        <div class="example__stats-item">
+          <dt class="example__stats-number">60 ДНЕЙ</dt>
+          <dd class="example__stats-description">затрачено времени</dd>
+        </div>
+      </dl>
+      <span class="example__noize">Затраты на питание: 15 000 РУБ.</span>
+    </section>
+    <section class="map">
+      <div class="map__wrapper map__wrapper--index">
+        <h2 class="map__title">приглашаем к сотрудничеству<br>дилеров!</h2>
+        <address class="map__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1672661307918!5m2!1sru!2sru"
+      allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="logo--footer" href="index.html"><span class="visually-hidden">Логотип компании</span></a>
+    <div class="footer-social">
+      <a class="footer-social__link footer-social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+      <a class="footer-social__link footer-social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+      <a class="footer-social__link footer-social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+    </div>
+      <a class="footer-social__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
