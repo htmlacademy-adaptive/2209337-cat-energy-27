@@ -118,12 +118,6 @@
     column-gap: 35px;
     margin-top: 20px;
   }
-
-  &--index {
-    @media (min-width: @desktop-width) {
-      color: #ffffff;
-    }
-  }
 }
 
 .nav__link {
@@ -155,10 +149,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    color: #ffffff;
+    color: #000000;
 
     &--active::after {
       background-color: #ffffff;
     }
+
+    &--index {
+      color: #ffffff;
+  }
   }
 }

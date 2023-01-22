@@ -19,11 +19,22 @@
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     width: 132px;
     border: none;
     padding: 0;
+  }
+}
+
+.footer-social__link {
+  &--vk {
+    padding-right: 26px;
+  }
+
+  &--youtube {
+    padding-right: 30px;
   }
 }
 
@@ -34,6 +45,10 @@
   line-height: 19px;
   color: #444444;
   text-decoration: none;
+
+  &--icon {
+    margin-left: auto;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0;
