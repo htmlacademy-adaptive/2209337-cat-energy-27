@@ -1,5 +1,15 @@
 .line__conteiner {
   position: relative;
+
+  &--catalog {
+    @media (min-width: @tablet-width) {
+      margin-left: 70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 110px;
+    }
+  }
 }
 
 .line__conteiner::before {
@@ -12,16 +22,15 @@
   z-index: -1;
 
   @media (min-width: @tablet-width) {
-    margin-left: calc((100vw - 768px) / 2);
+    margin-left: -70px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: calc((100vw - 1440px) / 2);
+    margin-left: -110px;
   }
 }
 
 .line__title-wrapper {
-  max-width: 1220px;
   margin: 0 auto;
 }
 

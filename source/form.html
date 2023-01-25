@@ -10,10 +10,10 @@
 </head>
 <body class="page">
   <header class="header">
-    <nav class="nav nav--closed nav--nojs">
+    <nav class="nav nav--closed">
     <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <a class="logo" href="#"><span class="visually-hidden">Логотип компании</span></a>
-      <div class="nav__list">
+    <a class="logo" href="index.html"><span class="visually-hidden">Логотип компании</span></a>
+      <div class="nav__list nav__list--index">
         <a class="nav__link " href="index.html">главная</a>
         <a class="nav__link" href="catalog.html">каталог продукции</a>
         <a class="nav__link nav__link--active" href="#">подбор программы</a>
@@ -24,6 +24,7 @@
     <form class="form__conteiner">
       <h1 class="form__title-main">Подбор программы</h1>
       <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      <div class="form__wrapper">
       <div class="form__form-cat">
         <label class="form__name-label" for="cat-name">имя:*
         <input class="form__field" id="cat-name" placeholder="барсик" type="text">
@@ -53,6 +54,7 @@
             <span class="form__name">не знаю (Нужен ваш совет)</span>
           </label>
       </fieldset>
+      </div>
           <header class="line__conteiner">
             <div class="line__title-wrapper"><h2 class="line__title">Контактные данные (владельца кота)</h2></div>
           </header>
@@ -94,7 +96,7 @@
             <span class="form__name">витамины</span>
           </label>
       </fieldset>
-      <button class="button">отправить заявку</button>
+      <button class="button button--form">отправить заявку</button>
       <small class="obligatory">* — Обязательные поля</small>
     </form>
     <section class="map">
@@ -107,13 +109,13 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="logo__footer"><span class="visually-hidden">Логотип компании</span></a>
-    <div class="social">
-      <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
-      <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
-      <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+    <a class="logo--footer" href="index.html"><span class="visually-hidden">Логотип компании</span></a>
+    <div class="footer-social">
+      <a class="footer-social__link footer-social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+      <a class="footer-social__link footer-social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+      <a class="footer-social__link footer-social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
     </div>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="footer-social__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </footer>
 </body>
 </html>

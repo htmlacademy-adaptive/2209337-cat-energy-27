@@ -1,11 +1,28 @@
 .logo {
   position: relative;
-  background-image: url("../img/logo-mobile-text.svg"), url("../img/logo-mobile-pic.svg");
+  background-image: url("../img/logo-mobile-pic.svg"), url("../img/logo-mobile-text.svg");
   background-repeat: no-repeat;
+  background-position: left center, center;
   display: block;
   content: "";
-  width: 101px;
-  height: 22px;
+  width: calc(100% - 40px);
+  height: 38px;
+  top: 10px;
+
+  &--footer {
+    background-image: url("../img/logo-footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    width: 128px;
+    height: 24px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/logo-tablet.svg");
@@ -14,6 +31,7 @@
     width: 175px;
     height: 52px;
     margin-top: 24px;
+    top: 0;
   }
 
   @media (min-width: @desktop-width) {
