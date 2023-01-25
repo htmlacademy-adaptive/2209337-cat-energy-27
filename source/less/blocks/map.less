@@ -1,0 +1,70 @@
+.map {
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  min-height: 362px;
+  max-height: 400px;
+  border: none;
+  display: block;
+}
+
+.map__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 70px 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 55px 80px;
+    top: 95px;
+    left: 110px;
+  }
+}
+
+.map__wrapper--index {
+  background-color: #ffffff;
+}
+
+.map__title {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 170px;
+    padding-right: 55px;
+  }
+}
+
+.map__address {
+  line-height: 20px;
+  font-style: normal;
+
+  @media (min-width: @tablet-width) {
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}

@@ -1,0 +1,250 @@
+.form {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+.form__container {
+  margin: 30px 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 65px 70px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 75px 110px 80px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 70px;
+  }
+}
+
+.form__title-main {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  padding-bottom: 35px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 55px;
+  }
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 40px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 65px;
+  }
+}
+
+.form__form-cat {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.form__name-label {
+  text-transform: uppercase;
+}
+
+.form__field {
+  border: 1px solid #e7e7e7;
+  padding: 14px 0 14px 20px;
+  margin-bottom: 14px;
+  margin-left: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 0 15px 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.form__field::placeholder {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.form__information-cat {
+  padding: 0;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 25px 0 25px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #d9d9d9;
+    padding: 25px 0 25px 30px;
+    margin: 72px 0 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 30px;
+  }
+}
+
+.form__form-human {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    column-gap: 80px;
+  }
+}
+
+.form__more {
+  border: none;
+  padding: 0;
+  margin: 35px 0 35px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.form__item {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.form__box {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  outline: 1px solid #cdcdcd;
+  left: 0;
+  top: 2px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.box-check[type="radio"] + .form__box {
+  border-radius: 50%;
+}
+
+.box-check[type="checkbox"]:checked + .form__box::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/form-tick.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 7px;
+  left: 5px;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 24px;
+    height: 19px;
+    top: 10px;
+    left: 8px;
+  }
+}
+
+.box-check[type="radio"]:checked + .form__box::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: @base-color;
+  border-radius: 50%;
+  top: 8.5px;
+  left: 8.5px;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
+}
+
+.form__comment {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  border: 1px solid #e7e7e7;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px 0 0 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+}
+
+.obligatory {
+  font-family: "Lato", "Arial", sans-serif;
+  display: block;
+  text-align: center;
+  color: #000000;
+  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    text-align: start;
+    margin-top: -40px;
+    margin-left: 330px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 650px;
+  }
+}
