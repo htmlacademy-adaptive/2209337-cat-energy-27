@@ -10,9 +10,8 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import rename from 'gulp-rename';
-import del from 'del';
+import {deleteAsync as del} from 'del';
 import terser from 'gulp-terser';
-
 
 // Styles
 
@@ -24,6 +23,7 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -91,7 +91,7 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src([
     'sourse/fonts/*.{woff2,woff}',
-    'sourse/*.iso',
+    'sourse/*.ico',
   ], {
     base: 'source'
   })
@@ -102,8 +102,8 @@ const copy = (done) => {
 //Clean
 
 export const clean = () => {
-  return del('build')
-}
+  return del('build');
+};
 
 // Server
 
