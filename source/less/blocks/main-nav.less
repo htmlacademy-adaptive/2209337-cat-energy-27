@@ -152,11 +152,28 @@
     color: #000000;
 
     &--active::after {
-      background-color: #ffffff;
+      background-color: @base-color;
     }
 
     &--index {
       color: #ffffff;
+    }
+
+    &--active-index {
+      position: relative;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    &--active-index::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
     }
   }
 }

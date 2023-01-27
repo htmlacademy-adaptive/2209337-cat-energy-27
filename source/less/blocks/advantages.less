@@ -11,7 +11,7 @@
     flex-direction: row;
     column-gap: 80px;
     justify-content: center;
-    margin-top: 280px;
+    margin: 280px 110px 0;
   }
 }
 
@@ -25,7 +25,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 570px;
     margin: 0;
   }
 }
@@ -120,8 +119,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 23px;
-    padding-left: 52px;
+    padding: 0 65px 23px 52px;
     max-width: 450px;
   }
 }
@@ -161,4 +159,10 @@
     top: 25px;
     left: 175px;
   }
+}
+
+.advantages__link:hover::before {
+  background-image: url("../img/advantages-arrow-hover.svg");
+  width: 32px;
+  height: 12px;
 }

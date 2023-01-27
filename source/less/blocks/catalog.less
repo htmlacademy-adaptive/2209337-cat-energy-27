@@ -37,6 +37,14 @@
   }
 }
 
+.catalog__more {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 895px 245px;
+    column-gap: 80px;
+  }
+}
+
 .catalog__product-more {
   text-align: center;
   border-top: 1px solid #ebebeb;
@@ -144,7 +152,7 @@
   padding-bottom: 15px;
 
   @media (min-width: @tablet-width) {
-    align-items: baseline;
+    align-items: center;
     padding: 0;
   }
 
@@ -156,6 +164,18 @@
 .catalog__product-item li {
   font-size: 16px;
   line-height: 20px;
+  width: 50%;
+
+  @media (min-width: @tablet-width) {
+    text-align: right;
+    width: 20%;
+  }
+}
+
+.catalog__product-name--more li {
+  padding-bottom: 13px;
+  width: 100%;
+  text-align: left;
 }
 
 .catalog__present {
@@ -167,20 +187,82 @@
   }
 }
 
+.catalog__present-text {
+  position: absolute;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  background-position-x: 50%;
+  bottom: 43px;
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    left: 425px;
+    bottom: 70px;
+  }
+}
+
 .catalog__present-image {
+  position: relative;
   display: block;
   width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: @desktop-width) {
-    width: 707px;
+  @media (min-width: @tablet-width) {
+    width: 100%;
     height: auto;
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
     height: auto;
+    margin: 0;
+  }
+}
+
+.catalog__present::before {
+  position: absolute;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-position: center;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 289px;
+  }
+}
+
+.catalog__present::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-gift-catalog.svg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  width: 100%;
+  height: 80px;
+  top: 60px;
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 82px;
+    left: 77px;
+    bottom: 60px;
   }
 }
