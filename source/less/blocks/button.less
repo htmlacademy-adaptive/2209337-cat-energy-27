@@ -11,9 +11,6 @@
   color: #ffffff;
   cursor: pointer;
   border: none;
-  display: flex;
-  margin: 0 20px 0;
-  justify-content: center;
 
   &--product-more {
     background-color: #f2f2f2;
@@ -38,8 +35,6 @@
 }
 
 .button--form {
-  margin: 0;
-
   @media (min-width: @tablet-width) {
     padding: 13px 45px;
   }
@@ -50,7 +45,8 @@
 }
 
 .button--catalog {
-  margin: 0;
+  width: 100%;
+  padding: 10px 110px;
 
   @media (min-width: @tablet-width) {
     padding: 10px 93px;
@@ -67,5 +63,13 @@
 
 .button:active {
   background-color: #5eaa2f;
+  opacity: 0.3;
+}
+
+.button--product-more:hover {
+  background-color: #ebebeb;
+}
+
+.button--product-more:active {
   opacity: 0.3;
 }
