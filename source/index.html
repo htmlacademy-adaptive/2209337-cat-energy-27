@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
-  <link  rel="icon" type="image/png" size="32x32" href="#">
-  <link href="css/style.css" rel="stylesheet">
+  <link  rel="icon" type="image/svg+xml" href="img/favicon_32.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page">
   <header class="header">
@@ -14,7 +15,7 @@
     <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <a class="logo" href="index.html"><span class="visually-hidden">Логотип компании</span></a>
       <div class="nav__list">
-        <a class="nav__link nav__link--index nav__link--active" href="#">главная</a>
+        <a class="nav__link nav__link--index nav__link--active-index" href="#">главная</a>
         <a class="nav__link nav__link--index" href="catalog.html">каталог продукции</a>
         <a class="nav__link nav__link--index" href="form.html">подбор программы</a>
       </div>
@@ -64,12 +65,12 @@
       <span class="example__noize">Затраты на питание: 15 000 РУБ.</span>
       <div class="example__cat-wrapper">
         <picture class="example__cat-before--pic">
-          <source media="(min-width: 768px)" srcset="img/cat_tablet_before.png 1x, img/cat_tablet_before@2x.png 2x">
-          <img class="example__cat-before" src="img/cat_mobile_before.png" srcset="img/cat_mobile_before@2x.png" width="280" height="256" alt="Кот до правильного питания">
+          <source media="(min-width: 768px)" srcset="img/cat-tablet-before.png 1x, img/cat-tablet-before@2x.png 2x">
+          <img class="example__cat-before" src="img/cat-mobile-before.png" srcset="img/cat-mobile-before@2x.png" width="280" height="256" alt="Кот до правильного питания">
         </picture>
         <picture class="example__cat-after--pic">
-          <source media="(min-width: 768px)" srcset="img/cat_tablet_after.png 1x, img/cat_tablet_after@2x.png 2x">
-          <img class="example__cat-after" src="img/cat_mobile_after.png" srcset="img/cat_mobile_after@2x.png" width="280" height="256" alt="Кот после правильного питания">
+          <source media="(min-width: 768px)" srcset="img/cat-tablet-after.png 1x, img/cat-tablet-after@2x.png 2x">
+          <img class="example__cat-after" src="img/cat-mobile-after.png" srcset="img/cat-mobile-after@2x.png" width="280" height="256" alt="Кот после правильного питания">
         </picture>
       </div>
     </section>

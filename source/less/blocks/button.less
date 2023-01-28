@@ -11,13 +11,11 @@
   color: #ffffff;
   cursor: pointer;
   border: none;
-  display: flex;
-  margin: 0 20px 0;
-  justify-content: center;
 
   &--product-more {
     background-color: #f2f2f2;
     color: #444444;
+    padding: 10px 100px;
   }
 
   @media (min-width: @tablet-width) {
@@ -26,6 +24,19 @@
     padding: 14px 26px;
     margin: 0;
     display: inline;
+
+    &--product-more {
+      padding: 6px 70px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    &--product-more {
+      padding: 6px 35px;
+    }
   }
 }
 
@@ -38,8 +49,6 @@
 }
 
 .button--form {
-  margin: 0;
-
   @media (min-width: @tablet-width) {
     padding: 13px 45px;
   }
@@ -50,13 +59,36 @@
 }
 
 .button--catalog {
-  margin: 0;
+  width: 100%;
+  padding: 10px 110px;
 
   @media (min-width: @tablet-width) {
-    padding: 10px 93px;
+    padding: 10px 85px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 10px 53px;
+    padding: 10px 45px;
+    width: auto;
   }
+}
+
+.button--catalog-more {
+  padding: 10px 80px;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+  opacity: 0.3;
+}
+
+.button--product-more:hover {
+  background-color: #ebebeb;
+}
+
+.button--product-more:active {
+  opacity: 0.3;
 }

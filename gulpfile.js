@@ -10,9 +10,8 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import rename from 'gulp-rename';
-import del from 'del';
+import {deleteAsync as del} from 'del';
 import terser from 'gulp-terser';
-
 
 // Styles
 
@@ -24,6 +23,7 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -33,7 +33,8 @@ export const styles = () => {
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('build'))
+    // .pipe(browser.reload());
 }
 
 //Scripts
@@ -46,21 +47,21 @@ const scripts = () => {
 
 //Images
 
-const optimizeImages = () => {
-  return gulp.src('source/img/**/*.(jpg,png)')
+export const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh())
-    .pipe(gulp.dest('build/img'));
-}
+    .pipe(gulp.dest('build/img'))
+  }
 
-const copyImages = () => {
-  return gulp.src('source/img/**/*.(jpg,png)')
-    .pipe(gulp.dest('build/img'));
-}
+  const copyImages = () => {
+    return gulp.src('source/img/**/*.{png,jpg}')
+    .pipe(gulp.dest('build/img'))
+    }
 
 //WebP
 
 const createWebP = () => {
-  return gulp.src('source/img/**/*.(jpg,png)')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh ( {
       webp : { } ,
       })
@@ -90,8 +91,8 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
-    'sourse/fonts/*.{woff2,woff}',
-    'sourse/*.iso',
+    'source/fonts/**/*.{woff2,woff}',
+    'source/*.ico',
   ], {
     base: 'source'
   })
@@ -102,8 +103,8 @@ const copy = (done) => {
 //Clean
 
 export const clean = () => {
-  return del('build')
-}
+  return del('build');
+};
 
 // Server
 
@@ -131,7 +132,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html));
 }
 
 //Build
