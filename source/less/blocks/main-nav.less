@@ -1,4 +1,4 @@
-.nav {
+.main-nav {
   font-family: "Oswald", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -10,7 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -25,7 +25,7 @@
   }
 }
 
-.nav__toggle {
+.main-nav__toggle {
   position: absolute;
   width: 25px;
   height: 16px;
@@ -42,7 +42,7 @@
 
 //Бургер
 
-.nav--closed .nav__toggle::before {
+.main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -55,7 +55,7 @@
 
 // Крестик
 
-.nav--opened .nav__toggle {
+.main-nav--opened .main-nav__toggle {
   top: 25px;
   right: 20px;
 
@@ -81,15 +81,15 @@
 // Закрытое открытое меню
 
 @media (max-width: @mobile-width-only) {
-  .nav--closed .nav__list {
+  .main-nav--closed .main-nav__list {
     display: none;
   }
 
-  .nav--closed .logo {
+  .main-nav--closed .logo {
     display: block;
   }
 
-  .nav--opened .nav__list {
+  .main-nav--opened .main-nav__list {
     position: absolute;
     background-color: #ffffff;
     top: 0;
@@ -98,13 +98,26 @@
     z-index: 2;
   }
 
-  .nav--opened .nav__link {
+  .main-nav--opened .main-nav__link {
     text-align: center;
     width: 100vw;
   }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__link {
+    display: block;
+  }
 }
 
-.nav__list {
+.main-nav__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -125,7 +138,7 @@
   }
 }
 
-.nav__link {
+.main-nav__link {
   display: block;
   color: #000000;
   text-decoration: none;
@@ -186,18 +199,18 @@
   }
 }
 
-.nav__link:hover {
+.main-nav__link:hover {
   opacity: 0.6;
 }
 
-.nav__link:active {
+.main-nav__link:active {
   opacity: 0.3;
 }
 
-.nav__link--activ-index:hover {
+.main-nav__link--activ-index:hover {
   opacity: 0.6;
 }
 
-.nav__link--activ-index:active {
+.main-nav__link--activ-index:active {
   opacity: 0.3;
 }
