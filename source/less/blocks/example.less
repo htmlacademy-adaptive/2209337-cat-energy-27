@@ -1,18 +1,19 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 20px 40px;
+  padding: 25px 20px 50px;
   position: relative;
+  width: 100vw;
 
   @media (min-width: @tablet-width) {
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 600px, #eaeaea 600px);
-    padding: 45px 30px 100px;
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 620px, #eaeaea 620px);
+    padding: 45px 30px 105px;
     border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 135px, #eaeaea 135px);
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 182px, #eaeaea 182px);
     border: none;
   }
 }
@@ -29,6 +30,7 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 62px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,6 +45,7 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
@@ -73,8 +76,8 @@
   line-height: 24px;
   color: #000000;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 13px;
+  padding-bottom: 2px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -86,9 +89,8 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  margin: 0 17px -10px 17px;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin: 0 17px -15px 17px;
+  padding: 7px 16px 0 16px;
   background-color: #eaeaea;
 
   @media (min-width: @tablet-width) {
@@ -114,7 +116,7 @@
   display: block;
   text-align: center;
   text-transform: uppercase;
-  padding: 20px 0 20px;
+  padding: 12px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -135,14 +137,15 @@
   margin-left: auto;
   margin-right: auto;
   width: 280px;
+  top: 10px;
 
   @media (min-width: @tablet-width) {
     width: 560px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: -700px;
-    margin-left: 630px;
+    margin-top: -705px;
+    margin-left: 670px;
   }
 }
 
@@ -150,16 +153,15 @@
   position: absolute;
   content: "";
   width: 4px;
-  height: 260px;
-  background-position-x: center;
+  height: 255px;
   background: #666666;
   border-radius: 2px;
   transform: rotate(-180deg);
   left: 50%;
 
   @media (min-width: @tablet-width) {
-    height: 512px;
-    top: 90px;
+    height: 515px;
+    top: 95px;
   }
 }
 

@@ -65,6 +65,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
+  gap: 20px;
 }
 
 .form__name-label {
@@ -86,6 +87,10 @@
 }
 
 .form__field {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
   position: relative;
   border: 1px solid #e7e7e7;
   padding: 14px 0 14px 20px;
@@ -94,6 +99,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 20px 0 20px 20px;
+    font-size: 20px;
   }
 }
 
@@ -206,6 +212,10 @@
 
 .form__box:hover {
   outline: 1px solid #bababa;
+}
+
+.form__item:active {
+  opacity: 0.3;
 }
 
 .box-check[type="radio"] + .form__box {
