@@ -8,7 +8,7 @@
   <link  rel="icon" type="image/svg+xml" href="img/favicon_32.svg">
   <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/oswaldregular.woff2"  as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/regular.woff2"  as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2"  as="font" crossorigin="anonymous">
 </head>
 <body class="page">
@@ -24,7 +24,7 @@
     </nav>
   </header>
   <main class="main">
-    <section class="promo promo-img promo__image-product">
+    <section class="promo promo-img promo-img-product">
       <h1 class="promo__title">Функциональное<br> питание для котов</h1>
       <p class="promo__text">Занялся собой? Займись котом!</p>
       <a class="button button--index" href="form.html">подобрать программу</a>
@@ -66,17 +66,17 @@
       </dl>
       <span class="example__noize">Затраты на питание:<br> 15 000 РУБ.</span>
       <div class="example__cat-wrapper">
-        <picture class="example__cat-before--pic">
+        <picture class="example__cat-wrapper-before example__cat-wrapper-before--pic">
           <source type="image/webp" srcset="img/cat-tablet-before.webp 1x, img/cat-tablet-before@2x.webp 2x">
           <source media="(min-width: 768px)" srcset="img/cat-tablet-before.png 1x, img/cat-tablet-before@2x.png 2x">
           <source type="image/webp" srcset="img/cat-mobile-before.webp 1x, img/cat-mobile-before@2x.webp 2x">
-          <img class="example__cat-before" src="img/cat-mobile-before.png" srcset="img/cat-mobile-before@2x.png" width="280" height="256" alt="Кот до правильного питания">
+          <img class="example__cat-wrapper-before" src="img/cat-mobile-before.png" srcset="img/cat-mobile-before@2x.png" width="280" height="256" alt="Кот до правильного питания">
         </picture>
-        <picture class="example__cat-after--pic">
+        <picture class="example__cat-wrapper-after example__cat-wrapper-after--pic">
           <source type="image/webp" srcset="img/cat-tablet-after.webp 1x, img/cat-tablet-after@2x.webp 2x">
           <source media="(min-width: 768px)" srcset="img/cat-tablet-after.png 1x, img/cat-tablet-after@2x.png 2x">
           <source type="image/webp" srcset="img/cat-mobile-after.webp 1x, img/cat-mobile-after@2x.webp 2x">
-          <img class="example__cat-after" src="img/cat-mobile-after.png" srcset="img/cat-mobile-after@2x.png" width="280" height="256" alt="Кот после правильного питания">
+          <img class="example__cat-wrapper-after" src="img/cat-mobile-after.png" srcset="img/cat-mobile-after@2x.png" width="280" height="256" alt="Кот после правильного питания">
         </picture>
       </div>
     </section>
@@ -90,13 +90,13 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="logo--footer" href="index.html"><span class="visually-hidden">Логотип компании</span></a>
+    <a class="footer footer-logo" href="index.html"><span class="visually-hidden">Логотип компании</span></a>
     <div class="footer-social">
       <a class="footer-social__link footer-social__link--vk" href="https://vk.com/htmlacademy"><svg width="28" height="22"><use xlink:href="img/sprite.svg#link-vk"></use></svg><span class="visually-hidden">Вконтакте</span></a>
       <a class="footer-social__link footer-social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><svg width="28" height="22"><use xlink:href="img/sprite.svg#link-youtube"></use></svg><span class="visually-hidden">Ютуб</span></a>
       <a class="footer-social__link footer-social__link--telegram" href="https://t.me/htmlacademy"><svg width="28" height="22"><use xlink:href="img/sprite.svg#link-telegram"></use></svg><span class="visually-hidden">Телеграм</span></a>
     </div>
-      <a class="footer-social__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><svg width="27" height="34"><use xlink:href="img/sprite.svg#copyright-link"></use></svg>HTML Academy</a>
+      <a class="footer-social footer-social--copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy<svg width="27" height="34"><use xlink:href="img/sprite.svg#copyright-link"></use></svg></a>
   </footer>
   <script src="js/script.js"></script>
 </body>
