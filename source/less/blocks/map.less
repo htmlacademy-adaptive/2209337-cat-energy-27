@@ -4,10 +4,13 @@
 
 .map iframe {
   width: 100%;
-  min-height: 362px;
-  max-height: 400px;
+  height: 362px;
   border: none;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }
 
 .map__wrapper {
@@ -17,13 +20,13 @@
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
-    padding: 60px 70px 80px;
+    padding: 60px 70px 60px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     background-color: #ffffff;
-    padding: 55px 80px;
+    padding: 60px 100px;
     top: 95px;
     left: 110px;
   }
@@ -41,6 +44,7 @@
   text-transform: uppercase;
   color: #111111;
   margin: 0;
+  min-width: 140px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
