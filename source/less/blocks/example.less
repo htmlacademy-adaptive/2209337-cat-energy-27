@@ -1,18 +1,17 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 20px 40px;
+  padding: 25px 20px 50px;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 600px, #eaeaea 600px);
-    padding: 45px 30px 100px;
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 620px, #eaeaea 620px);
+    padding: 45px 30px 115px;
     border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 135px, #eaeaea 135px);
+    padding: 0 110px 95px;
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 133px, #eaeaea 133px);
     border: none;
   }
 }
@@ -25,14 +24,18 @@
   color: #000000;
   margin: 0;
   padding-bottom: 40px;
+  max-width: 280px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 62px;
+    max-width: 708px;
   }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 145px;
+    max-width: 1220px;
   }
 }
 
@@ -43,10 +46,13 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 55px;
+    max-width: 708px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 440px;
+    padding-bottom: 70px;
   }
 }
 
@@ -55,9 +61,15 @@
   justify-content: center;
   column-gap: 32px;
   margin: 0 0 20px;
+  max-width: 280px;
 
   @media (min-width: @tablet-width) {
     justify-content: flex-start;
+    max-width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
   }
 }
 
@@ -73,8 +85,8 @@
   line-height: 24px;
   color: #000000;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 13px;
+  padding-bottom: 2px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -86,9 +98,8 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  margin: 0 17px -10px 17px;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin: 0 17px -15px 17px;
+  padding: 7px 16px 0 16px;
   background-color: #eaeaea;
 
   @media (min-width: @tablet-width) {
@@ -114,19 +125,35 @@
   display: block;
   text-align: center;
   text-transform: uppercase;
-  padding: 20px 0 20px;
+  padding: 12px 0;
+  max-width: 280px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     text-align: right;
-    margin-top: -60px;
+    margin-top: -85px;
+    margin-right: 30px;
+    max-width: 708px;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: @desktop-width) {
     text-align: left;
-    margin: 55px 0 75px;
+    margin: 65px 0 0;
     padding: 0;
+    max-width: 1220px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -135,32 +162,54 @@
   margin-left: auto;
   margin-right: auto;
   width: 280px;
+  top: 10px;
 
   @media (min-width: @tablet-width) {
     width: 560px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: -700px;
-    margin-left: 630px;
+    margin-top: -630px;
+    margin-left: 670px;
   }
 }
 
 .example__cat-wrapper::before {
   position: absolute;
   content: "";
-  width: 4px;
+  width: 100%;
   height: 260px;
-  background-position-x: center;
-  background: #666666;
-  border-radius: 2px;
-  transform: rotate(-180deg);
-  left: 50%;
+  background-image: url("../img/slider-cat.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: @tablet-width) {
     height: 512px;
-    top: 90px;
+    background-image: url("../img/slider-cat-tablet.svg");
+    top: 100px;
   }
+}
+
+.example__cat-wrapper:hover::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 260px;
+  background-image: url("../img/slider-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    height: 512px;
+    background-image: url("../img/slider-cat-hover-tablet.svg");
+    top: 100px;
+  }
+}
+
+.example__cat-wrapper:disabled::before {
+  position: absolute;
+  content: "";
+  opacity: 0.6;
 }
 
 .example__cat-before {
