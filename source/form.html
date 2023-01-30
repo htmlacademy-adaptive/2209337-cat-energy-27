@@ -8,7 +8,7 @@
     <link  rel="icon" type="image/svg+xml" href="img/favicon_32.svg">
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.min.css" rel="stylesheet">
-    <link rel="preload" href="fonts/oswaldregular.woff2"  as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2"  as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/lato/Lato-Regular.woff2"  as="font" crossorigin="anonymous">
   </head>
   <body class="page">
@@ -17,9 +17,9 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <a class="logo" href="index.html"><span class="visually-hidden">Логотип компании</span></a>
           <div class="main-nav__list">
-            <a class="main-nav__link main-nav__link--index main-nav__link--active-index" href="#">главная</a>
-            <a class="main-nav__link main-nav__link--index" href="catalog.html">каталог продукции</a>
-            <a class="main-nav__link main-nav__link--index" href="form.html">подбор программы</a>
+            <a class="main-nav__link" href="index.html">главная</a>
+            <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+            <a class="main-nav__link main-nav__link--active" href="#">подбор программы</a>
           </div>
         </nav>
     </header>
@@ -55,7 +55,7 @@
           </label>
         </fieldset>
         </div>
-        <header class="line__title-container">
+        <header class="line">
           <div class="line__title-wrapper">
             <h2 class="line__title">Контактные данные (владельца кота)</h2>
           </div>
@@ -64,17 +64,17 @@
           <label class="form__name-label icon-email" for="email">E-mail:*
             <input class="form__field" id="email" placeholder="kuklachev@gmail.com" type="email">
           </label>
-          <label class="form__name-label icon-phone" for="number">Телефон:*
+          <label class="form__name-label icon-phone" for="phone">Телефон:*
             <input class="form__field" id="phone" placeholder="8 (960) 900-60-90" type="tel">
           </label>
         </div>
-        <header class="line__title-container">
+        <header class="line">
           <div class="line__title-wrapper">
             <h2 class="line__title">Комментарий</h2>
           </div>
         </header>
         <textarea class="form__comment" placeholder="Расскажите обо всех повaдках кота" rows="5" name="comment"></textarea>
-          <header class="line__title-container">
+          <header class="line">
             <div class="line__title-wrapper">
               <h2 class="line__title">Дополнительно</h2>
             </div>
@@ -113,13 +113,13 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo--footer" href="index.html"><span class="visually-hidden">Логотип компании</span></a>
+      <a class="footer footer-logo" href="index.html"><span class="visually-hidden">Логотип компании</span></a>
       <div class="footer-social">
         <a class="footer-social__link footer-social__link--vk" href="https://vk.com/htmlacademy"><svg width="28" height="22"><use xlink:href="img/sprite.svg#link-vk"></use></svg><span class="visually-hidden">Вконтакте</span></a>
         <a class="footer-social__link footer-social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><svg width="28" height="22"><use xlink:href="img/sprite.svg#link-youtube"></use></svg><span class="visually-hidden">Ютуб</span></a>
         <a class="footer-social__link footer-social__link--telegram" href="https://t.me/htmlacademy"><svg width="28" height="22"><use xlink:href="img/sprite.svg#link-telegram"></use></svg><span class="visually-hidden">Телеграм</span></a>
       </div>
-        <a class="footer-social__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><svg width="27" height="34"><use xlink:href="img/sprite.svg#copyright-link"></use></svg>HTML Academy</a>
+        <a class="footer-social footer-social--copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy<svg width="27" height="34"><use xlink:href="img/sprite.svg#copyright-link"></use></svg></a>
     </footer>
     <script src="js/script.js"></script>
   </body>
