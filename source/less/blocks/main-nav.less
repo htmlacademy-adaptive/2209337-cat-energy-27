@@ -98,7 +98,8 @@
     z-index: 2;
   }
 
-  .main-nav--opened .main-nav__link {
+  .main-nav--opened .main-nav__link,
+  .main-nav--nojs .main-nav__link {
     text-align: center;
     width: 100vw;
   }
@@ -109,7 +110,10 @@
 
   .main-nav--nojs .main-nav__list {
     position: static;
+    display: block;
     min-height: 0;
+    margin-top: 40px;
+    border-top: 1px solid #e6e6e6;
   }
 
   .main-nav--nojs .main-nav__link {
