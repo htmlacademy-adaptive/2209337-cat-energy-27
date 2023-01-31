@@ -13,11 +13,11 @@
   margin: 30px 20px;
 
   @media (min-width: @tablet-width) {
-    margin: 65px 70px 70px;
+    margin: 50px 70px 80px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 75px 110px 80px;
+    margin: 70px 110px 90px;
   }
 }
 
@@ -25,7 +25,7 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     column-gap: 80px;
   }
 }
@@ -65,7 +65,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 20px;
+  gap: 9px;
+
+  @media (min-width: @tablet-width) {
+    gap: 20px;
+  }
 }
 
 .form__name-label {
@@ -93,13 +97,14 @@
   text-transform: uppercase;
   position: relative;
   border: 1px solid #e7e7e7;
-  padding: 14px 0 14px 20px;
+  padding: 12px 0 12px 20px;
   margin-left: 13px;
   flex-grow: 1;
 
   @media (min-width: @tablet-width) {
-    padding: 20px 0 20px 20px;
+    padding: 10px 0 10px 15px;
     font-size: 20px;
+    margin-left: 21px;
   }
 }
 
@@ -130,9 +135,9 @@
 .form__information-cat {
   padding: 0;
   border: none;
-  padding-top: 20px;
+  padding-top: 19px;
   padding-bottom: 20px;
-  margin: 25px 0 25px;
+  margin: 22px 0 0;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
   width: 100%;
@@ -140,7 +145,7 @@
   @media (min-width: @tablet-width) {
     border: 1px solid #e7e7e7;
     padding: 25px 0 25px 30px;
-    margin: 72px 0 75px;
+    margin: 72px 0 42px;
   }
 
   @media (min-width: @desktop-width) {
@@ -152,6 +157,14 @@
 .form__form-human {
   display: flex;
   flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    gap: 22px;
+    margin-top: 46px;
+    margin-bottom: 33px;
+  }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
@@ -162,16 +175,20 @@
 .form__more {
   border: none;
   padding: 0;
-  margin: 35px 0 35px;
+  margin: 13px 0 33px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: start;
+    column-gap: 60px;
+    row-gap: 23px;
+    margin: 22px 0 47px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 24px 0 53px;
   }
 }
 
@@ -189,7 +206,11 @@
 }
 
 .form__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 7px;
+  }
 }
 
 .form__item:disabled {
@@ -267,13 +288,26 @@
   line-height: 18px;
   border: 1px solid #e7e7e7;
   text-transform: uppercase;
-  width: 100%;
+  width: 263px;
+  height: 139px;
   padding: 10px 0 0 15px;
+  margin-top: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 20px;
+    width: 609px;
+    height: 163px;
+    padding: 10px 0 0 15px;
+    margin-top: 47px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1203px;
+    height: 168px;
+    padding: 16px 0 0 18px;
+    margin-bottom: 27px;
   }
 }
 
@@ -287,8 +321,8 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     text-align: start;
-    margin-top: -40px;
-    margin-left: 330px;
+    margin-top: -44px;
+    margin-left: 340px;
   }
 
   @media (min-width: @desktop-width) {
